@@ -1,0 +1,87 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.5),
+      rgba(47, 109, 163, 0.5)
+    ),
+    url("../image/birds.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom, right;
+  background-size: cover;
+  max-width: 90%;
+  margin: auto;
+}
+
+blockquote {
+  font-style: italic;
+  background-color: lightgrey;
+  font-size: 160%;
+  width: 50%;
+  margin: auto;
+  border-left-style: solid;
+  border-left-width: 3px;
+  border-left-color: firebrick;
+  padding-left: 30px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.good,
+.bad {
+  text-transform: capitalize;
+}
+
+.bad {
+  color: red;
+}
+
+.good {
+  color: green;
+}
+
+tr:nth-of-type(odd) {
+  background-color: rgb(119, 119, 119);
+}
+
+.first-line {
+  padding: 2%;
+  background-image: url("../image/bien.png");
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: 20px;
+}
+
+.second-line {
+  padding: 2%;
+  background-image: url("../image/mal.png");
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: 20px;
+}
+
+.third-line {
+  padding: 2%;
+  background-image: url("../image/chat.png");
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: 20px;
+}
+
+p:first-of-type {
+  font-weight: bold;
+}
+
+.picture-1 {
+  margin-left: 20px;
+  float: right;
+}
+
+.picture-2 {
+  margin-right: 20px;
+  float: left;
+}
+
+table {
+  caption-side: bottom;
+}
