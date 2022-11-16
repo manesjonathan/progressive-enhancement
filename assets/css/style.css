@@ -1,24 +1,56 @@
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+
+header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color: rgb(182, 164, 116);
+  color: white;
+  text-align: center;
+}
+
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+
 body {
+  padding-top: 100px;
+  padding-bottom: 100px;
   font-family: "Open Sans", sans-serif;
-  background-image: linear-gradient(
-      to bottom,
+  background-image: linear-gradient(to right,
       rgba(255, 255, 255, 0.5),
-      rgba(47, 109, 163, 0.5)
-    ),
-    url("../image/birds.jpg");
+      rgba(0, 0, 0, 0.5)),
+    url("../image/background.jpg");
   background-repeat: no-repeat;
   background-position: bottom, right;
   background-size: cover;
+  background-attachment: fixed;
   max-width: 90%;
   margin: auto;
 }
 
-p {
-  font-family: system-ui;
+hr{
+  border-top: 2px solid rgb(182, 164, 116);
 }
 
+p {
+  font-family: 'Times New Roman', Times, serif;
+  letter-spacing: 0.15rem;
+  font-size: 1.2em;
+  color: rgb(12, 0, 80);
+
+}
+
+p:first-of-type {
+  font-weight: bold;
+}
+
+
 blockquote {
-  font-style: italic;
   background-color: lightgrey;
   font-size: 160%;
   width: 50%;
@@ -29,7 +61,24 @@ blockquote {
   padding-left: 30px;
   padding-top: 80px;
   padding-bottom: 80px;
+  padding-right: 10px;
 }
+
+
+.villagers{
+  font-style: italic;
+  border-left-style: solid;
+  border-left-width: 3px;
+  border-left-color: blueviolet;
+}
+
+.farmer{
+  font-style: italic;
+  border-left-style: solid;
+  border-left-width: 3px;
+  border-left-color: coral;
+}
+
 
 .good,
 .bad {
@@ -44,9 +93,32 @@ blockquote {
   color: green;
 }
 
-tr:nth-of-type(odd) {
-  background-color: rgb(119, 119, 119);
+
+
+/*--------------------------------------------------------------
+# Link
+--------------------------------------------------------------*/
+
+a:link {
+  color: brown;
 }
+
+a:visited {
+  color: green;
+}
+
+a:hover {
+  color: hotpink;
+}
+
+a:active {
+  color: blue;
+}
+
+
+/*--------------------------------------------------------------
+# List
+--------------------------------------------------------------*/
 
 .first-line {
   padding: 2%;
@@ -72,9 +144,10 @@ tr:nth-of-type(odd) {
   background-size: 20px;
 }
 
-p:first-of-type {
-  font-weight: bold;
-}
+
+/*--------------------------------------------------------------
+# Picture
+--------------------------------------------------------------*/
 
 .picture-1 {
   margin-left: 20px;
@@ -86,6 +159,42 @@ p:first-of-type {
   float: left;
 }
 
+/*--------------------------------------------------------------
+# Table
+--------------------------------------------------------------*/
+
 table {
+  font-size: larger;
   caption-side: bottom;
+
+}
+
+tr:nth-of-type(odd) {
+  background-color: rgb(119, 119, 119);
+}
+
+td {
+  text-align: center;
+  padding: 5px;
+}
+
+caption {
+  font-size: 0.8em;
+  text-align: left;
+}
+
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(182, 164, 116);
+  color: white;
+  text-align: center;
+  padding: 30px;
 }
